@@ -1,0 +1,30 @@
+    body{
+		background-color: #f5eceb;
+	}
+    #wrapper{
+        border: 1px solid #000000;
+        background-color: aliceblue;
+        min-height: 100%;
+        margin: 5px;
+    }
+    .header{
+        border: 1px solid #000000;
+        background-color: #ecf5eb;
+        height: 300px;
+    }
+    .main-navigation{
+        background-color: #F54927;
+        height: 47px;
+        text-align: center;
+        color: #c0c0c0c0;
+        padding-top: 23px;
+
+    }
+    .main-navigation a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+        margin-top: 10%;
+    }
