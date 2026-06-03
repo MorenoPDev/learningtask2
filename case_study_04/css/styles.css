@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f8fa; 
+    margin: 0;
+    padding: 0;
+    color: #222222;
+}
+
+.hero-banner img {
+    width: 60px;
+    height: auto;
+    border-radius: 6px;
+}
+.top-nav {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    border-bottom: 4px solid #0056b3;
+    margin-top: 20px;
+}
+
+.top-nav a {
+    color: #004085;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.top-nav a:hover {
+    color: #ffffff;
+    background-color: #007bff;
+}
+
+
+.hero-banner {
+    background-color: #004085;
+    color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-banner h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+
+.content-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.welcome-box {
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-left: 6px solid #007bff; 
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #002855;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.7;
+    color: #444444;
+}
+
+.project-card {
+    margin-left: 10px;
+    display: inline-block;
+    width: 45%;
+    background-color: #e6f0fa; 
+    border: 1px solid #b3d1ff;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: 30vh;
+}
+
+.footer {
+    background-color: #61abff; 
+    color: #004085;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 60px;
+}
