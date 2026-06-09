@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> .:javascript 04:.</title>
+        <script>
+            function getName(){
+                let name = document.getElementById("txtName").value;
+                if(name == "Paige"){
+                    document.getElementById("name").innerHTML = name + ", You have access !";
+                } else {
+                    document.getElementById("name").innerHTML = name + ", You do not have access !";
+                } 
+                let password = document.getElementById("passPassword").value;
+                if(password == "Paige123"){
+                    document.getElementById("name").innerHTML += "<br>" + "Your password is correct";
+                } else {
+                    document.getElementById("name").innerHTML += "<br>" + "Your password is incorrect";
+                }
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <label>What is my name</label><br>
+        <input type="text" id="txtName"><br>
+        <label>What is my password</label><br>
+        <input type="password" id="passPassword"><br>
+        <button onclick="return getName()">Click to have access</button><br>
+        <div id="name">No access</div>
+
+
+    </body>
+</html>
