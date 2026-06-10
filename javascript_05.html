@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>.:JavaScript 05:.</title>
+        <script>
+            function getName() {             
+                let name = document.getElementById("txtName").value;
+                let password = document.getElementById("passPassword").value;
+                if (name == "admin" && password == "password") {
+                    window.location.href = "javascript_05_page_02.html";
+                } else {
+                    document.getElementById("alert").innerHTML = name + ", you do not have access.";
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <label>User:</label><br>
+        <input type="text" id="txtName"><br>
+        <label>Password:</label><br>
+        <input type="password" id="passPassword"><br><br>
+        <button onclick="getName()">Click to enter</button>
+        <div id="alert">Please login.</div>
+    </body>
+</html>

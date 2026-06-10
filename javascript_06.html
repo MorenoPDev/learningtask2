@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>.: JavaScript 06 :.</title>
+
+    <style type="text/css">
+        .image-container {
+            display: none;
+        }
+    </style>
+
+    <script>
+        function setVisibility(value) {
+            document.getElementById("cat-image").style.display = value;
+            document.getElementById("dog-image").style.display = value;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="image-container" id="cat-image">
+        <img src="cat.jpg" width="30%">
+    </div>
+
+    [
+    <a href="javascript:void(0)" onclick="setVisibility('block')">Display Cat</a>
+    |
+    <a href="javascript:void(0)" onclick="setVisibility('none')">Hide Cat</a>
+    ]
+
+    <br><br>
+
+    <div class="image-container" id="dog-image">
+        <img src="dog.jpg" width="30%">
+    </div>
+
+    [
+    <a href="javascript:void(0)" onclick="setVisibility('block')">Display Dog</a>
+    |
+    <a href="javascript:void(0)" onclick="setVisibility('none')">Hide Dog</a>
+    ]
+
+</body>
+</html>
