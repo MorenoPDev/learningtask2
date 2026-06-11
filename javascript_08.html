@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>.: Javascript 08 :.</title>
+
+<script>
+function areaOfSquare() {
+    let side = document.getElementById("sideOfSquare");
+
+    if (side.value != "") {
+        let area = parseFloat(side.value) * parseFloat(side.value);
+        alert("Area of square is " + area);
+    } else {
+        alert("Side of square is empty!");
+        side.focus();
+    }
+}
+
+function areaOfRectangle() {
+    let length = document.getElementById("lengthOfRectangle");
+    let width = document.getElementById("widthOfRectangle");
+
+    if (length.value != "" && width.value != "") {
+        let area = parseFloat(length.value) * parseFloat(width.value);
+        alert("Area of rectangle is " + area);
+    } else {
+        alert("Length or width is empty!");
+    }
+}
+
+function areaOfTriangle() {
+    let base = document.getElementById("baseOfTriangle");
+    let height = document.getElementById("heightOfTriangle");
+
+    if (base.value != "" && height.value != "") {
+        let area = 0.5 * parseFloat(base.value) * parseFloat(height.value);
+        alert("Area of triangle is " + area);
+    } else {
+        alert("Base or height is empty!");
+    }
+}
+
+function areaOfCircle() {
+    let radius = document.getElementById("radiusOfCircle");
+
+    if (radius.value != "") {
+        let area = 3.1416 * parseFloat(radius.value) * parseFloat(radius.value);
+        alert("Area of circle is " + area);
+    } else {
+        alert("Radius is empty!");
+    }
+}
+
+function areaOfTrapezoid() {
+    let base1 = document.getElementById("base1OfTrapezoid");
+    let base2 = document.getElementById("base2OfTrapezoid");
+    let height = document.getElementById("heightOfTrapezoid");
+
+    if (base1.value != "" && base2.value != "" && height.value != "") {
+        let area = 0.5 * (parseFloat(base1.value) + parseFloat(base2.value)) * parseFloat(height.value);
+        alert("Area of trapezoid is " + area);
+    } else {
+        alert("One or more inputs are empty!");
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<a name="top"></a>
+
+<h1>Length Calculator</h1>
+
+<p>
+Create a calculator for the following shapes
+<ol>
+    <li><a href="#area-of-square">Area of square</a></li>
+    <li><a href="#area-of-rectangle">Area of rectangle</a></li>
+    <li><a href="#area-of-triangle">Area of triangle</a></li>
+    <li><a href="#area-of-circle">Area of circle</a></li>
+    <li><a href="#area-of-trapezoid">Area of trapezoid</a></li>
+</ol>
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<a name="area-of-square"></a>
+<h1>Area of square</h1>
+<label>Side</label><br>
+<input type="text" id="sideOfSquare" /><br />
+<button onClick="return areaOfSquare()">Compute</button><br />
+<a href="#top">Top</a>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+<a name="area-of-rectangle"></a>
+<h1>Area of rectangle</h1>
+<label>Length</label><br>
+<input type="text" id="lengthOfRectangle" /><br />
+
+<label>Width</label><br>
+<input type="text" id="widthOfRectangle" /><br />
+
+<button onClick="return areaOfRectangle()">Compute</button><br />
+<a href="#top">Top</a>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+<a name="area-of-triangle"></a>
+<h1>Area of triangle</h1>
+<label>Base</label><br>
+<input type="text" id="baseOfTriangle" /><br />
+
+<label>Height</label><br>
+<input type="text" id="heightOfTriangle" /><br />
+
+<button onClick="return areaOfTriangle()">Compute</button><br />
+<a href="#top">Top</a>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+<a name="area-of-circle"></a>
+<h1>Area of circle</h1>
+<label>Radius</label><br>
+<input type="text" id="radiusOfCircle" /><br />
+
+<button onClick="return areaOfCircle()">Compute</button><br />
+<a href="#top">Top</a>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+<a name="area-of-trapezoid"></a>
+<h1>Area of trapezoid</h1>
+<label>Base 1</label><br>
+<input type="text" id="base1OfTrapezoid" /><br />
+
+<label>Base 2</label><br>
+<input type="text" id="base2OfTrapezoid" /><br />
+
+<label>Height</label><br>
+<input type="text" id="heightOfTrapezoid" /><br />
+
+<button onClick="return areaOfTrapezoid()">Compute</button><br />
+<a href="#top">Top</a>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+</body>
+</html>
