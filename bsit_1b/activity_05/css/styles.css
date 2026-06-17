@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(187, 235, 197);
+}
+.wrapper {
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+    min-height: 100px;
+}
+.header {
+    background-image: url(../images/pattern.jpg);
+    min-height: 100px;
+}
